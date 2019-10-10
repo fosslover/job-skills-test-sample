@@ -1,0 +1,30 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Finale REST Generator v1 + Sequlize v5 + Express v4 Sample App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node --inspect=0.0.0.0:2233 src/index.js",
+    "migrate": "sequelize db:migrate && sequelize db:seed:all --debug",
+    "start": "npm run migrate && npm run dev",
+    "test": ""
+  },
+  "keywords": ["REST API design training session"],
+  "author": "fosslover",
+  "license": "private",
+  "dependencies": {
+    "express": "^4.17.1",
+    "finale-rest": "^1.1.0",
+    "sequelize": "^5.19.2",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "nodemon": "^1.19.3"
+  }
+}

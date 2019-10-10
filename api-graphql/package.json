@@ -1,0 +1,31 @@
+{
+  "name": "api-graphql",
+  "version": "1.0.0",
+  "description": "GraphQl + Appolo 2 + Sequlize 5 + Express 4 Sample App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node --inspect=0.0.0.0:2234 src/index.js",
+    "migrate": "sequelize db:migrate && sequelize db:seed:all --debug",
+    "start": "npm run migrate && npm run dev",
+    "test": ""
+  },
+  "keywords": ["Graphql API design training session"],
+  "author": "fosslover",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.9.4",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "sequelize": "^5.19.2",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "nodemon": "^1.19.3"
+  }
+}
