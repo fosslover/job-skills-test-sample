@@ -1,3 +1,3 @@
 # job-skills-test-sample
 
-please view the doc folder for more infos.
+please view the docs folder for more infos.
